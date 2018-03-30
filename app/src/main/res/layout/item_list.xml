@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/task_title"
+        android:layout_alignParentRight="true"
+        android:checked="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:onClick="onClickCheckBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_title"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#010102"
+        tools:text="Task Title"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_description"
+        android:layout_marginLeft="15dp"
+        android:textColor="#6c6c6c"
+        android:text="task description"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
